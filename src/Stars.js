@@ -4,17 +4,17 @@ import React from 'react';
 import Star from './Star';
 
 function Stars ({count}) {
-  let stars = [];
+  let stars = []
   for (let i = 0; i < count; i++) {
-    stars.push(<Star key={i}/>);
+    stars.push(<Star key={i}/>)
   }
-  return(
+  return (
     <div>
-      <ul className="card-body-stars">
+      {count > 0 && count < 6 && <ul className="card-body-stars">
         <li>
-          {count > 0 && count < 6 && stars}
+          {stars}
         </li>
-      </ul>
+      </ul>}
     </div>
   )
 }
