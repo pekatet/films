@@ -18,4 +18,12 @@ function Stars ({count}) {
   )
 }
 
+Stars.defaultProps = {
+  count: 0
+}
+
+Stars.propTypes = {
+  count: PropTypes.number
+}
+
 export default Stars;
