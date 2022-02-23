@@ -1,6 +1,6 @@
 import './App.css';
 import {PropTypes} from 'prop-types'
-import React from 'react';
+import React, { Fragment } from 'react'
 import Star from './Star';
 
 function Stars ({count}) {
@@ -9,13 +9,13 @@ function Stars ({count}) {
     stars.push(<Star key={i}/>)
   }
   return (
-    <div>
+    <Fragment>
       {count > 0 && count < 6 && <ul className="card-body-stars">
         <li>
           {stars}
         </li>
       </ul>}
-    </div>
+    </Fragment>
   )
 }
 
